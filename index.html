@@ -2,72 +2,20 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>81_81_1 :: Zack‑Klack</title>
-
-<style>
-  body { background:#000; color:#0ff; font-family:monospace; padding:40px; }
-  .c { border:1px solid #0ff; padding:20px; width:420px; margin-bottom:20px; }
-  h1 { margin:0 0 20px 0; }
-  .pulse { animation:pulse 1.2s infinite; }
-  @keyframes pulse { 0%{opacity:0.2;} 50%{opacity:1;} 100%{opacity:0.2;} }
-
-  .idbox { border:1px solid #055; padding:10px; margin-top:20px; color:#5ff; }
-  .errlink a { color:#f33; text-decoration:none; }
-  .errlink a:hover { color:#ff0; }
-</style>
+<title>81_81_1 – Minimal Matrix</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<h1>81_81_1 – Minimal Geometrie</h1>
+<p>Dieses Modul enthält nur Geometrie, Formeln und 81×9hoch9.</p>
 
-<h1>81_81_1 :: Zack‑Klack</h1>
-
-<div class="c">
-  <h3>Mandrake‑Move</h3>
-  <pre id="out" class="pulse"></pre>
-</div>
-
-<div class="idbox">
-  <strong>ID‑Stellung:</strong><br>
-  AXIOM‑ID: 81_81_1‑001<br>
-  CORE: Φ<br>
-  POS: (1, Φ)<br>
-  CODE: Φ
-</div>
-
-<div class="errlink">
-  <h3>ERROR‑Modus</h3>
-  <a href="https://iki1uc.github.io/error/error.html?from=81_81_1&mode=SONNE&hint=Zack-Klack+Erkenntnis">☀️ SONNE</a><br>
-  <a href="https://iki1uc.github.io/error/error.html?from=81_81_1&mode=MOND&hint=Zack-Klack+Hinweis">🌙 MOND</a><br>
-  <a href="https://iki1uc.github.io/error/error.html?from=81_81_1&mode=MARS&hint=Zack-Klack+Schwarzes+Loch">🔥 MARS</a>
-</div>
-
-<script>
-// --- 81_81_1 CORE ---
-function mandrake() {
-  const A = 81;
-  const B = 81;
-  const G = 1;
-
-  const flow = `${A}_${B}_${G}`;
-  const tick = Math.floor(Math.random()*81);
-
-  return {
-    flow,
-    tick,
-    cast: `ZACK‑KLACK → ${flow} :: ${tick}`
-  };
-}
-
-// --- RENDER ---
-function run() {
-  const o = document.getElementById("out");
-  const m = mandrake();
-  o.innerText = m.cast;
-}
-
-setInterval(run, 900);
-run();
-</script>
+<ul>
+  <li><a href="./ID.json">ID</a></li>
+  <li><a href="./cubes.json">81 Cubes</a></li>
+  <li><a href="./geo.js">Geometrie</a></li>
+  <li><a href="./api.js">API</a></li>
+</ul>
 
 </body>
 </html>
