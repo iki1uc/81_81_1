@@ -1,42 +1,22 @@
-# 81_81_1  
-Minimal. Maximal. Orbit‑Gate‑Flow.
+# A81-Axis · 9×9 · QI/IQQ/OCTA · Pipeline 3/6/9/12
 
-**81_81_1** ist die GitHub‑kompatible Form des vollständigen Ausdrucks  
-**81~(81)1** — einer dreifachen Struktur aus:
+Diese Station bildet ALLE iki1uc-Stationen ab:
+A81-Axis, 9hoch9, 81_81_1, ULTRA, X.room, NC, RESPO, META-CORE, CUBE, CACHE, SEND, PUSH, HOLD.
 
-- **81** → Basis  
-- **81** → Spiegel / Orbit  
-- **1**  → Gate / Startrolle  
+──────────────────────────────────────────────
+## Inhalte
 
-Gemeinsam bilden sie das **121‑Verhalten**:  
-**1 → 2 → 1**
+- QI – Index-Schaltung
+- IQQ – 3-Zustands-Schaltung
+- OCTA – 8-Wege-Intelligenz
+- Pipeline 3 – tri-routing
+- Pipeline 6 – hex-routing
+- Pipeline 9 – non-routing
+- Pipeline 12 – dodeca-routing
 
----
+──────────────────────────────────────────────
+## Dateien
 
-## Mandrake‑Move :: Zack‑Klack  
-Der Kern von **81_81_1** ist ein einfacher, aber wirkungsvoller Ablauf:
-
-1. **Orbit setzen**  
-2. **Gate öffnen**  
-3. **Tick erzeugen**  
-4. **Cast ausgeben**  
-
-Jeder Durchlauf erzeugt einen neuen **Zack‑Klack‑Impuls**.
-
----
-
-## Live‑Demo  
-Die `index.html` zeigt den Orbit‑Gate‑Flow in Echtzeit:
-
-- 81_81_1 wird gepulst  
-- ein Tick wird erzeugt  
-- der Mandrake‑Cast wird ausgegeben  
-
-Alles ohne externe Module.  
-Alles minimal.  
-Alles maximal.
-
----
-
-## Struktur  
-
+- 9×9.js – Masterengine
+- id.html – Stempel
+- index.html – Anzeige
