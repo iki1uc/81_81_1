@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>A81-Axis · 9×9 · QI/IQQ/OCTA · Pipeline 3/6/9/12</title>
+<title>A81-Axis · RESPO-100 · RESPO-360</title>
 
 <style>
 body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
@@ -14,21 +14,28 @@ pre {
 }
 </style>
 
-<script src="9×9.js"></script>
+<script type="module">
+import { buildRespo100 } from "./respo100.js";
+import { buildRespo360 } from "./respo360.js";
+import { buildDashboard } from "./respoDashboard.js";
+
+window.onload = () => {
+    const r100 = buildRespo100();
+    const r360 = buildRespo360();
+    const dash = buildDashboard(r100, r360);
+
+    document.getElementById("out").innerText =
+        JSON.stringify(dash, null, 2);
+};
+</script>
 
 </head>
 
 <body>
 
-<h1>A81-Axis · 9×9 · QI/IQQ/OCTA · Pipeline 3/6/9/12</h1>
+<h1>A81-Axis · RESPO-100 · RESPO-360</h1>
 
 <pre id="out">Lade…</pre>
-
-<script>
-const result = A81_AXIS.build();
-document.getElementById("out").innerText =
-    JSON.stringify(result, null, 2);
-</script>
 
 </body>
 </html>
