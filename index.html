@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>81_81_1 – Minimal Matrix</title>
-<link rel="stylesheet" href="style.css">
+<title>A81-Axis · 9×9 · QI/IQQ/OCTA · Pipeline 3/6/9/12</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
+h1 { color:#6cf; text-align:center; }
+pre {
+    background:#111;
+    padding:20px;
+    border-left:3px solid #6cf;
+}
+</style>
+
+<script src="9×9.js"></script>
+
 </head>
 
 <body>
-<h1>81_81_1 – Minimal Geometrie</h1>
-<p>Dieses Modul enthält nur Geometrie, Formeln und 81×9hoch9.</p>
 
-<ul>
-  <li><a href="./ID.json">ID</a></li>
-  <li><a href="./cubes.json">81 Cubes</a></li>
-  <li><a href="./geo.js">Geometrie</a></li>
-  <li><a href="./api.js">API</a></li>
-</ul>
+<h1>A81-Axis · 9×9 · QI/IQQ/OCTA · Pipeline 3/6/9/12</h1>
+
+<pre id="out">Lade…</pre>
+
+<script>
+const result = A81_AXIS.build();
+document.getElementById("out").innerText =
+    JSON.stringify(result, null, 2);
+</script>
 
 </body>
 </html>
